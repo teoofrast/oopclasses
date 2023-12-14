@@ -1,9 +1,5 @@
 class MeansOfTransport:
 
-    def __init__(self, color, brand):
-        self.__color = color
-        self.__brand = brand
-
     def set_color(self, color):
         self.__color = color
 
