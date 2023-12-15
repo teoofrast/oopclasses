@@ -1,4 +1,4 @@
-class MeansOfTransport:
+class MeansOfTransport():
 
     def __init__(self, color, brand):
         self.__color = color
@@ -16,6 +16,6 @@ class MeansOfTransport:
     def get_brand(self):
         return self.__brand
 
-trans1 = MeansOfTransport()
-trans1.set_brand(input("Input a new brand of vehicle: "))
+trans1 = MeansOfTransport(input("Введите цвет транспорта: "), input("Введите марку транспорта: "))
+trans1.set_brand(input("Введите новую марку транспорта: "))
 print(trans1.__dict__)
