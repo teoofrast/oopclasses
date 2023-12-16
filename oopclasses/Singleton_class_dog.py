@@ -6,6 +6,7 @@ class Dog:
             Dog__instance = super().__new__(cls, *args, **kwargs)
         return Dog.__instance
 
+
 if __name__ == '__main__':
     first = Dog()
     second = Dog()
