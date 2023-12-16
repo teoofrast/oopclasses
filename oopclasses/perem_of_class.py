@@ -17,6 +17,12 @@ class MeansOfTransport():
         return self.__brand
 
 class Car(MeansOfTransport):
+    _engine = 2.4
+    __transmission = 'auto'
+
+    @classmethod
+    def get_class_value(cls):
+        return cls._engine, cls.__transmission
 
     def __init__(self, color, brand, num_of_wheels):
         super().__init__(color, brand)
@@ -34,4 +40,6 @@ class Moped(MeansOfTransport):
 
 
 moped1 = Moped("Black", "Kawasaki", 2)
-print(moped1.find_time(10, 2))
+car1 =Car('Black', 'Audi', 4)
+print(Car._engine)
+print(Car.__transmission)
