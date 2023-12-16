@@ -7,6 +7,9 @@ class Animals(ABC):
     def voice(self):
         pass
 
+    @abstractmethod
+    def a(self):
+        print('method a')
 
 class Cat(Animals):
 
