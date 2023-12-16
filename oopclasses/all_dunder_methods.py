@@ -70,3 +70,4 @@ class Car(MeansOfTransport):
 car1 = Car('Black', 'Audi', 4)
 del car1.num_of_wheels
 print(car1.brand)
+print(car1.color)
