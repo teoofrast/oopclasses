@@ -1,4 +1,4 @@
-class MeansOfTransport():
+class MeansOfTransport:
 
     def __init__(self, color, brand):
         self.__color = color
@@ -27,6 +27,7 @@ class MeansOfTransport():
     @brand.deleter
     def brand(self):
         del self.__brand
+
 
 class Car(MeansOfTransport):
 
@@ -66,6 +67,7 @@ class Car(MeansOfTransport):
     def __delattr__(self, item):
         print("Удаление " + item)
         object.__delattr__(self, item)
+
 
 car1 = Car('Black', 'Audi', 4)
 del car1.num_of_wheels
